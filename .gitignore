@@ -2,3 +2,5 @@
 .idea
 *.class
 *.ctxt
+package.bluej
+team.defs
