@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 
 class Q2_2020 {
 
