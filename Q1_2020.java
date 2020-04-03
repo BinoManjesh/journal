@@ -3,6 +3,7 @@ import java.util.Scanner;
 class Q1_2020 {
 
     public static void main(String[] args) {
+        //Hi
         Scanner sc = new Scanner(System.in);
         System.out.print("m = ");
         int m = sc.nextInt();
