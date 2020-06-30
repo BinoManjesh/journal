@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Q1_2020 {
+class PrimeAdam {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

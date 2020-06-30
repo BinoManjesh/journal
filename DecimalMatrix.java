@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Q2_2020 {
+class DecimalMatrix {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
