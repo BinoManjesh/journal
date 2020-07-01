@@ -6,7 +6,22 @@ class FashionSentence {
     String str;
     int a, b;
 
-    private static String shift(String word) {
+    public static void main(String[] args) {
+        FashionSentence obj = new FashionSentence();
+        obj.accept();
+        obj.printSentence();
+    }
+
+    void accept() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("ENTER THE SENTENCE:-");
+        str = sc.nextLine();
+        System.out.println("ENTER THE 2 INDICES");
+        a = sc.nextInt();
+        b = sc.nextInt();
+    }
+
+    String shift(String word) {
         String output = "";
         for (int i = 0; i < word.length(); i++) {
             char c = word.charAt(i);
@@ -21,10 +36,10 @@ class FashionSentence {
         return output;
     }
 
-    public static void main(String[] args) {
-
+    void printSentence() {
         int i = 1;
         String output = "";
+        StringTokenizer tok = new StringTokenizer(str);
         while (tok.hasMoreTokens()) {
             String word = tok.nextToken();
             if (i == a || i == b) {
@@ -35,15 +50,5 @@ class FashionSentence {
             ++i;
         }
         System.out.println(output);
-    }
-
-    void accept() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("ENTER THE SENTENCE:-");
-        str = sc.nextLine();
-        System.out.println("ENTER THE 2 INDICES");
-        a = sc.nextInt();
-        b = sc.nextInt();
-        StringTokenizer tok = new StringTokenizer(str);
     }
 }
