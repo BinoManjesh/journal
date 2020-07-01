@@ -1,0 +1,28 @@
+main()
+1.Initialize String array code =
+    {"2", "22", "222",
+     "3", "33", "333",
+     "4", "44", "444",
+     "5", "55", "555",
+     "6", "66", "666",
+     "7", "77", "777", "7777",
+     "8", "88", "888",
+     "9", "99", "999", "9999"}
+2.Accept sentence in String str
+3.Initialize String keys = ""
+4.For each character c in str:-
+5.  If c == ' '
+6.      add "0" to keys
+7.  else
+8.      add code[ (int)c - 97] to keys
+9.int array freq = countFreq(keys)
+10.print keys and freq
+
+countFreq(String keys)
+1.Initialize int array freq of length 9
+2.For each character c in keys
+3.  if c == ' '
+4.      Increment freq[8] by 1
+5.  else
+6.      Increment freq[ Integer.parseInt(c) - 2] by 1
+7.return freq
