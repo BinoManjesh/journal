@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-class Q3_2020 {
+class SortWords {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
