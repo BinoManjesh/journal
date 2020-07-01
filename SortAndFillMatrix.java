@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Q2_2019 {
+class SortAndFillMatrix {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

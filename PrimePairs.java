@@ -1,6 +1,6 @@
-import java.util.*;
+import java.util.Scanner;
 
-class Q1_2018 {
+class PrimePairs {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -8,7 +8,7 @@ class Q1_2018 {
 		int n = sc.nextInt();
 		System.out.println("PRIME PAIRS ARE:");
 		if (n % 2 != 0)
-			System.out.println("INVALID NUMBER. NUMBER IS ODD."); 
+			System.out.println("INVALID NUMBER. NUMBER IS ODD.");
 		else if (n <= 9 || n >= 50)
 			System.out.println("INVALID NUMBER. NUMBER IS EVEN.");
 		for (int i = 3; i < n / 2; ++i) {

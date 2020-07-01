@@ -1,15 +1,15 @@
-import java.util.*;
+import java.util.Scanner;
 
-class Q3_2018 {
+class VerticalDisplay {
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.print("N = ");
-		int n = sc.nextInt();
-		sc.nextLine();
-		if (2 < n && n < 9) {
-			String[] teams = new String[n];
-			int maxSize = 0;
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("N = ");
+        int n = sc.nextInt();
+        sc.nextLine();
+        if (2 < n && n < 9) {
+            String[] teams = new String[n];
+            int maxSize = 0;
 
 			for (int i = 0; i < n; ++i) {
 				System.out.print("Team " + (i + 1) + ": ");

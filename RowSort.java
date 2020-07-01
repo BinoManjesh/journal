@@ -1,6 +1,6 @@
-import java.util.*;
+import java.util.Scanner;
 
-class Q2_2018 {
+class RowSort {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

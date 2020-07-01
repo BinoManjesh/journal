@@ -1,6 +1,9 @@
-import java.util.*;;
+import java.util.Scanner;
+import java.util.StringTokenizer;
 
-class Q3_2019 {
+;
+
+class PalindromeWords {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

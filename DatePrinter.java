@@ -1,16 +1,16 @@
 import java.util.Scanner;
 
-class Q1_2019 {
+class DatePrinter {
 
-    private static final int[] DAYS = new int[] {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-    private static final String[] MONTHS = new String[] {
-        "JANUARY",
-        "FEBRUARY",
-        "MARCH",
-        "APRIL",
-        "MAY",
-        "JUNE",
-        "JULY",
+    private static final int[] DAYS = new int[]{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    private static final String[] MONTHS = new String[]{
+            "JANUARY",
+            "FEBRUARY",
+            "MARCH",
+            "APRIL",
+            "MAY",
+            "JUNE",
+            "JULY",
         "AUGUST",
         "SEPTEMBER",
         "OCTOBER",
