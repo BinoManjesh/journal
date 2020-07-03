@@ -52,7 +52,7 @@ class SMS {
     void display() {
         System.out.println("Keys: " + keys);
 
-        System.out.println("Key\tFrequency");
+        System.out.println("Key\t-\tFrequency");
         if (freq[0] != 0) {
             System.out.println(0 + " - " + freq[0]);
         }

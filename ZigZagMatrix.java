@@ -6,7 +6,7 @@ class ZigZagMatrix {
 
     void accept() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("ENTER THE NUMBER OF ROWS AND COLUMNS: ");
+        System.out.print("ENTER THE NUMBER OF ROWS AND COLUMNS: ");
         int n = sc.nextInt();
         int m = sc.nextInt();
         mat = new int[n][m];
