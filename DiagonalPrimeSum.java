@@ -21,8 +21,9 @@ class DiagonalPrimeSum {
         for (int i = 0; i < n; i++) {
             if (isPrime(mat[i][i]))
                 sum += mat[i][i];
-            if (isPrime(mat[i][n - i - 1]))
-                sum += mat[i][n - i - 1];
+            if (n - i - 1 != i)
+                if (isPrime(mat[i][n - i - 1]))
+                    sum += mat[i][n - i - 1];
         }
         System.out.println(sum);
     }
