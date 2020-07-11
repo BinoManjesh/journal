@@ -19,6 +19,7 @@ class FunnyWords {
     static boolean isFunny(String word) {
         int n = word.length();
         for (int i = 1; i < word.length(); ++i)
+            // Does not generate reverse of string. Reverses the index
             if (Math.abs(word.charAt(i) - word.charAt(i - 1)) != Math.abs(word.charAt(n - i - 1) - word.charAt(n - i)))
                 return false;
         return true;
