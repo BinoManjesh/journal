@@ -6,6 +6,7 @@ class Cartons {
 
     void accept() {
         Scanner sc = new Scanner(System.in);
+        System.out.print("N = ");
         n = sc.nextInt();
     }
 
