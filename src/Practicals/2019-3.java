@@ -1,15 +1,17 @@
-import java.util.Scanner;
-import java.util.StringTokenizer;
-
-;
+import java.util.*;
 
 class PalindromeWords {
 
-	public static void main(String[] args) {
+	String s;
+
+	void accept() {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("");
-		String s = sc.nextLine();
-		if (isValid(s)) {
+		s = sc.nextLine();
+	}
+
+	void display() {
+		if (isValid()) {
 			StringTokenizer tok = new StringTokenizer(s, " .?!");
 			while (tok.hasMoreTokens()) {
 				String word = tok.nextToken();
@@ -24,7 +26,7 @@ class PalindromeWords {
 		}
 	}
 
-	private static boolean isValid(String s) {
+	boolean isValid() {
 		for (int i = 0; i < s.length() - 1; ++i) {
 			char c = s.charAt(i);
 			if (!Character.isUpperCase(c) && c != ' ') {
@@ -41,9 +43,16 @@ class PalindromeWords {
 		}
 	}
 
-	private static String reverse(String s) {
-		if (s.length() == 1)
+	String reverse(String s) {
+		if (s.length() == 1) {
 			return s;
+		}
 		return reverse(s.substring(1)) + s.charAt(0);
+	}
+
+	public static void main(String[] args) {
+		PalindromeWords obj = new PalindromeWords();
+		obj.accept();
+		obj.display();
 	}
 }
