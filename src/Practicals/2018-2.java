@@ -31,9 +31,9 @@ class RowSort {
 	// Sorts using selection sort
 	void sort(int[] row) {
 		for (int i = 0; i < row.length; ++i) {
-			int copy = row[i];
 			for (int j = i + 1; j < row.length; ++j) {
 				if (row[j] < row[i]) {
+					int copy = row[i];
 					row[i] = row[j];
 					row[j] = copy;
 				}

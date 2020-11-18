@@ -38,9 +38,9 @@ class SortWords {
     // Sorts words using selection sort
     void sort() {
         for (int i = 0; i < words.length; ++i) {
-            String copy = words[i];
             for (int j = i + 1; j < words.length; ++j) {
                 if (lesserThan(words[j], words[i])) {
+                    String copy = words[i];
                     words[i] = words[j];
                     words[j] = copy;
                 }
