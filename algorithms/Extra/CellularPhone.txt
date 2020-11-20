@@ -1,0 +1,27 @@
+countFreq(String keys)
+	Initialize int array freq of length 9
+	For each character c in keys
+	  if c == '0'
+	      Add 1 to freq[0]
+	  else
+	      Add 1 to freq[ Integer.parseInt(c) - 1]
+	return freq
+
+Initialize String array code =
+  {"2", "22", "222",
+   "3", "33", "333",
+   "4", "44", "444",
+   "5", "55", "555",
+   "6", "66", "666",
+   "7", "77", "777", "7777",
+   "8", "88", "888",
+   "9", "99", "999", "9999"}
+Read String str
+Let String keys = ""
+For each character c in str:-
+  If c == ' '
+      add "0" to keys
+  else
+      add code[ (int)c - 97] to keys
+Let int array freq = countFreq(keys)
+print keys and freq

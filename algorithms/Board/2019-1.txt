@@ -1,2 +1,29 @@
+Let int array DAYS = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}
+Let String array MONTHS = {
+	"JANUARY", "FEBRUARY", "MARCH",
+    "APRIL", "MAY", "JUNE",
+    "JULY", "AUGUST", "SEPTEMBER",
+    "OCTOBER", "NOVEMBER", "DECEMBER"
+}
+
+getDate(int day, int year)
+	For int month from 0 to 11:
+		let int daysInNextMonth = DAYS[month]
+		If the month is february and year is a leap year:
+			Add 1 to daysInNextMonth
+		If (day > daysInNextMonth):
+			Subtract daysInNextMonth from day
+		Else:
+			Leave For construct
+	return day + " " + <appropriate prefix for day> + " " + MONTHS[month] + ", " + year
+
 Read int day, year and n
-get
+Print getDate(day, year)
+Let int newDay = day + n, newYear = year
+If newDay > 366:
+	If year is a leap year:
+		Subtract 366 from newDay
+	else:
+		Subtract 365 from newDay
+	Add 1 to newYear
+Print getDate(newDay, newYear)
