@@ -1,0 +1,8 @@
+Read String s
+If s is invalid, Stop
+For each word - String word in s:
+	Let String reverse = reverse of s
+	If reverse is the same as s:
+		Print (word + " ")
+	Else:
+		Print(word + reverse + " ")

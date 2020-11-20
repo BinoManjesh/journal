@@ -1,0 +1,19 @@
+shift(char ch)
+	If ch is in lower case:
+		If ch <= m:
+			return (char)(ch + 13)
+		Else:
+			return (char)(ch - 13)
+	Else if ch is in upper case:
+		If ch <= M:
+			return (char)(ch + 13)
+		Else:
+			return (char)(ch - 13)
+	Else:
+		return ch
+
+Read String plainText
+Let String cipher = ""
+For each char c in plainText:
+	Add shift(c) to cipher
+Print cipher

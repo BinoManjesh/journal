@@ -1,0 +1,10 @@
+Read int n
+Read int array array of size n
+Sort a
+Let pendulum = int array of size n
+For int i from 0 to n-1:
+	If i is not a multiple of 2:
+		Set pendulum[(n - 1)/2 + (i + 1)/2] = array[i]
+	Else:
+		Set pendulum[(n - 1)/2 - (i + 1)/2] = array[i]
+Print pendulum

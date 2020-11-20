@@ -1,0 +1,20 @@
+isPrime(int n)
+    For int i from 2 to n - 1:
+        If i divides n evenly
+            return false
+    return true
+
+isAdam(int n)
+    If the reverse of n^2 is equal to the square of the reverse of n:
+        return true
+    else
+        return false
+
+Read int m, n
+If m > n, Stop
+Let int freq = 0
+For int i from m to n:
+    If isPrime(i) and isAdam(i)
+        Print i
+        Add 1 to freq
+Print freq

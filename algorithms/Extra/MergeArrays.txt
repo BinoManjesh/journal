@@ -1,0 +1,14 @@
+Read int na
+Read int array a of size na
+Read int nb
+Read int array b of size nb
+Let merged = int array of size na + nb
+Let int i = 0, j = 0, k = 0
+while k < na + nb:
+	If i < na and (j >= nb or a[i] < b[j]):
+		Set merged[k] = a[i]
+		Add 1 to k and i
+	Else
+		Set merged[k] to j
+		Add 1 to k and j
+Print merged

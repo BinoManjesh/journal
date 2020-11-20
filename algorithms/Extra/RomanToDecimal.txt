@@ -1,0 +1,11 @@
+Read String roman
+Let int decimal = 0, prev = 0
+Value of I, V, X, L, C, D, M are 1, 5, 10, 50, 100, 500, 1000
+For each char ch in roman:
+	Let int value = value of ch
+	If value  < prev:
+		Subtract value from deimal
+	Else
+		Add value to decimal
+	Set prev = value
+Print decimal

@@ -1,8 +1,0 @@
-Step 1: Start
-Step 2: Accept the sentence, s
-Step 3: If last char of s is not '.' and not '?' and not '!', stop
-Step 4: Break s into words and store them in an array, words
-Step 5: Swap adjacent elements of words if they are in descending order
-Step 6: If any swaps were made in step 5 go to step 5
-Step 7: Display s and the now sorted array, words
-Step 8: Stop

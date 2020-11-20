@@ -1,0 +1,2 @@
+Read int day, year and n
+get

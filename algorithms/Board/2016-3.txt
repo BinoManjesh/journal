@@ -1,0 +1,18 @@
+Read String sentence
+Put each word of sentence in String array words
+Let first = String array of the same size as words
+Let second = String array of the same size as words
+Let int p = 0, q = 0, count = 0
+For each String word in words:
+	if both the first and second char of word are vowels:
+		Add 1 to count
+		Set first[p] = words[i]
+		Add 1 to p
+	Else:
+		Set second[q] = words[i]
+		Add 1 to q
+Print count
+For each String s in first:
+	Print s
+For each String s in second:
+	Print s

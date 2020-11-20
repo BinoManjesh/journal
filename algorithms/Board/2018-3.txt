@@ -1,0 +1,9 @@
+Read int n
+Read String array teams of size n
+Let int maxSize = maximum length of all strings in teams
+For each int i from 0 to maxSize-1
+	For each int j from 0 to n - 1
+		If i < teams[j].length()
+			Print teams[j].charAt(i)
+		else
+			Print \t

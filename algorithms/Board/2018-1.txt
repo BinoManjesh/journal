@@ -1,0 +1,4 @@
+Read int n
+For each int i from 3 to n/2, at steps of 2:
+	If both i and n - i are prime:
+		Print (i + (i-1))

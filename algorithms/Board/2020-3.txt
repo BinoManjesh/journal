@@ -1,0 +1,8 @@
+Read String sentence
+If sentence is invalid, Stop
+Put all words in sentence in String array words
+For int i from 0 to words.length - 1:
+    For int j from i + 1 to words.length - 1:
+        If words[j] is smaller than words[i]
+            swap words[i] and words [j]
+For each String word in words, Print word

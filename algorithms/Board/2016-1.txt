@@ -1,0 +1,22 @@
+
+cyclicShift(int n):
+	return (n%10)*pow + n/10
+
+Read int n
+let copy = n
+let pow = 1
+while copy > 0:
+	Multiply 10 to pow
+	Divide copy by 10
+Divide pow by 10
+Let int num = n
+Let boolean isCircularPrime = true
+	Print num
+	If num isn't prime:
+		Set isCircularPrime = false
+	Set num = cyclicShift(num)
+while num != n, back to previous block
+If isCircularPrime:
+	Print n is circular prime
+Else:
+	Print n is not circular prime

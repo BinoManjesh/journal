@@ -1,0 +1,10 @@
+Read int m, n
+If m < 0 or m >= 10 or n <= 2 or n >= 6, Stop
+Read matrix matrix of size mXn
+If any element in matrix is invalid, Stop
+For int i from 0 to m - 1:
+    Let int dec = 0
+    For int j from 0 to n - 1:
+        Add matrix[i][j] X 8^(n - 1 - j) to dec
+        Print matrix[i][j]
+    Print dec

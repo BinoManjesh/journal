@@ -1,0 +1,36 @@
+Read int n, m
+Read int matrix matrix of size nXm
+Let int i = 0, j = 0
+Let int lowerBoundI = 0, upperBoundI = n - 1, lowerBoundJ = 0, upperBoundJ = m - 1
+Let String direction = "RIGHT"
+while lowerBoundI <= i and i <= upperBoundI and lowerBoundJ <= j && j <= upperBoundJ:
+	Print matrix[i][j]
+	If direction is:
+		"RIGHT":
+			If j < upperBoundJ
+				Add 1 to j
+			Else
+				Set direction = "DOWN"
+				Add 1 to i
+				Add 1 to lowerBoundI
+		"DOWN":
+			If i < upperBoundI
+				Add 1 to i
+			Else
+				Set direction = "LEFT"
+				Subtract 1 from j
+				Subtract 1 from upperBoundJ
+		"LEFT":
+			If lowerBoundJ < j
+				Subtract 1 from j
+			Else
+				Set direction = "UP"
+				Subtract 1 from i
+				Subtract 1 from upperBoundI
+		"UP":
+			If lowerBoundI < i
+				Subtract 1 from i
+			Else
+				Set direction = "RIGHT"
+				Add 1 to j
+				Add 1 to lowerBoundJ

@@ -1,0 +1,26 @@
+Read int m
+Read int matrix a of size mXm
+Print a
+Let nonBoundary = int array of size (m - 2)^2
+Let int k = 0
+For each int i from 1 to m - 2:
+	For each int j from 1 to m - 2:
+		Set nonBoundary[k] = a[i][j]
+		Add 1 to k
+Sort array nonBoundary
+Set k = 0
+For each int i from 1 to m - 2:
+	For each int j from 1 to m - 2:
+		Set a[i][j] = nonBoundary[k]
+		Add 1 to k
+Print a
+Let int sum = 0
+For each int i from 0 to m - 1:
+	For each int j from 0 to m - 1:
+		If a[i][j] is a diagonal element:
+			Add a[i][j] to sum
+			Print a[i][j]
+		Else:
+			Print \t
+	Print \n
+Print sum

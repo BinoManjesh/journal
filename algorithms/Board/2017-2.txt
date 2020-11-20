@@ -1,0 +1,12 @@
+Read int n
+Let scores = int array of size n
+Read char matrix answers of size nX5
+Read char array of size 5
+Let int highestScore = 0
+For each int i from 0 to n-1:
+	For each int j from 0 to 4:
+		If answerKey[j] == answers[i][j]
+			Add 1 to scores[i]
+	Set highestScore = max(highestScore, scores[i])
+Print scores
+Print all i such that scores[i] == hishestScore

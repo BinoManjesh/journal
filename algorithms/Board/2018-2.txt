@@ -1,0 +1,6 @@
+Read int m, n
+Read int matrix a of size mXn
+Print a
+For each int i from 0 to m-1:
+	Sort the ith row of a
+Print a

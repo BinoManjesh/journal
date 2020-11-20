@@ -1,0 +1,15 @@
+Read int n
+Read int array a of size n
+For each int i from 0 to n-1:
+	For each int j from i + 1 to n-1:
+		If a[j] < a[i]
+			swap a[i] and a[j]
+Print a
+Let b = int matrix of size nXn
+For each int i from 0 to n - 1:
+	Let int offset = 0
+	For each int j from 0 to n-1:
+		Set b[i][j] = a[j-offset]
+		If j = n - i - 1
+			Set offset = j + 1
+Print b
