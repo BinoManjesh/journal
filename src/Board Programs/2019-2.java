@@ -39,7 +39,6 @@ class SortAndFillMatrix {
 	}
 
 	void fill() {
-		int n = a.length;
 		for (int i = 0; i < n; ++i) {
 			int offset = 0;
 			for (int j = 0; j < n; ++j) {

@@ -40,6 +40,7 @@ class CircularPrime {
             System.out.println(num);
             if (!isPrime(num)) {
                 isCircularPrime = false;
+                break;
             }
             num = cyclicShift(num);
         } while (num != n);
