@@ -13,7 +13,7 @@ class DecimalMatrix {
         System.out.print("N = ");
         n = sc.nextInt();
 
-        if (m < 0 || m >= 10 || n <= 2 || n >= 6) {
+        if (m <= 0 || m >= 10 || n <= 2 || n >= 6) {
             System.out.println("OUT OF RANGE");
             return false;
         }
