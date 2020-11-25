@@ -38,7 +38,7 @@ class DecimalMatrix {
             int dec = 0;
             for (int j = 0; j < n; j++) {
                 System.out.print(matrix[i][j] + " ");
-                dec += matrix[i][j] * (int)Math.pow(8, n - 1 - j);
+                dec += matrix[i][j]*(int) Math.pow(8, n - 1 - j);
             }
             System.out.print(dec + "\n");
         }

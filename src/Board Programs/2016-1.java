@@ -47,7 +47,7 @@ class CircularPrime {
 
         if (isCircularPrime) {
             System.out.println(n + " IS A CIRCULAR PRIME");
-        } else  {
+        } else {
             System.out.println(n + " IS NOT A CIRCULAR PRIME");
         }
     }

@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 class DatePrinter {
 
-    private static final int[] DAYS = new int[] {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    private static final int[] DAYS = new int[]{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     private static final String[] MONTHS = new String[]{
-            "JANUARY", "FEBRUARY", "MARCH",
-            "APRIL", "MAY", "JUNE",
-            "JULY", "AUGUST", "SEPTEMBER",
-            "OCTOBER", "NOVEMBER", "DECEMBER"
+        "JANUARY", "FEBRUARY", "MARCH",
+        "APRIL", "MAY", "JUNE",
+        "JULY", "AUGUST", "SEPTEMBER",
+        "OCTOBER", "NOVEMBER", "DECEMBER"
     };
 
     int day, year, n;
@@ -37,9 +37,9 @@ class DatePrinter {
     String getPrefix(int n) {
         if (n%10 == 1) {
             return "ST";
-        } else if (n % 10 == 2 && n != 12) {
+        } else if (n%10 == 2 && n != 12) {
             return "ND";
-        } else if (n % 10 == 3 && n != 13) {
+        } else if (n%10 == 3 && n != 13) {
             return "RD";
         } else {
             return "TH";
@@ -78,7 +78,7 @@ class DatePrinter {
         }
         System.out.println("DATE AFTER " + n + " DAYS:\t\t" + getDate(newDay, newYear));
     }
-    
+
     public static void main(String[] args) {
         DatePrinter obj = new DatePrinter();
         if (obj.accept()) {

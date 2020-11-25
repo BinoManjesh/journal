@@ -30,7 +30,7 @@ class PrimeAdam {
 
     boolean isAdam(int n) {
         int rev = reverse(n);
-        return rev*rev == reverse(n * n);
+        return rev*rev == reverse(n*n);
     }
 
     int reverse(int n) {

@@ -12,15 +12,15 @@ class CaesarCipher {
     char shift(char ch) {
         if (Character.isLowerCase(ch)) {
             if (ch <= 'm') {
-                return (char)(ch + 13);
+                return (char) (ch + 13);
             } else {
-                return (char)(ch - 13);
+                return (char) (ch - 13);
             }
         } else if (Character.isUpperCase(ch)) {
             if (ch <= 'M') {
-                return (char)(ch + 13);
+                return (char) (ch + 13);
             } else {
-                return (char)(ch - 13);
+                return (char) (ch - 13);
             }
         } else {
             return ch;

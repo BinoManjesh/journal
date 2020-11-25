@@ -26,7 +26,7 @@ class SpiralMatrix {
         String direction = "RIGHT";
         while (lowerBoundI <= i && i <= upperBoundI && lowerBoundJ <= j && j <= upperBoundJ) {
             System.out.print(matrix[i][j] + "\t");
-            switch(direction) {
+            switch (direction) {
                 case "RIGHT":
                     if (j < upperBoundJ) {
                         ++j;

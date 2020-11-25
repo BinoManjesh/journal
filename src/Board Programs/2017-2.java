@@ -44,7 +44,6 @@ class QuizScorer {
             }
             highestScore = Math.max(highestScore, scores[i]);
         }
-
     }
 
     void display() {

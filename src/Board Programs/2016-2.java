@@ -5,7 +5,6 @@ class SortMatrix {
     int m;
     int[][] a;
 
-
     // Returns true if the input is valid
     boolean accept() {
         Scanner sc = new Scanner(System.in);

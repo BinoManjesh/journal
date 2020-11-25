@@ -46,7 +46,6 @@ class SortWords {
                 }
             }
         }
-
     }
 
     void display() {
@@ -57,10 +56,10 @@ class SortWords {
     }
 
     public static void main(String[] args) {
-            SortWords obj = new SortWords();
-            if (obj.accept()) {
-                obj.sort();
-                obj.display();
-            }
+        SortWords obj = new SortWords();
+        if (obj.accept()) {
+            obj.sort();
+            obj.display();
+        }
     }
 }

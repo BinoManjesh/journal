@@ -11,7 +11,7 @@ class Strange {
     }
 
     void pushItem(int value) {
-        if (top != capacity -1) {
+        if (top != capacity - 1) {
             elements[++top] = value;
         } else {
             System.out.println("Strange is full. Cannot push item");

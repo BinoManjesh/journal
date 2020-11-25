@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 class MergeArrays {
+
     int na, nb;
     int[] a, b, merged;
 
@@ -25,7 +26,7 @@ class MergeArrays {
     void merge() {
         merged = new int[na + nb];
         int i = 0, j = 0, k = 0;
-        while(k < na + nb) {
+        while (k < na + nb) {
             if (i < na && (j >= nb || a[i] < b[j])) {
                 merged[k++] = a[i++];
             } else {
